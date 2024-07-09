@@ -804,28 +804,28 @@ body:after {
 }
 
 .sticky-wrapper.is-sticky .site-navbar {
-  background: #fff;
+  background: #373a6d;
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
   box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-menu-toggle {
-  color: #000;
+  /* color: #000; */
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-logo a {
-  color: #000;
+  /* color: #000; */
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-menu>li>a {
-  color: #000 !important;
+  /* color: #000 !important; */
   padding: 20px 20px;
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-menu>li>a:hover,
 .sticky-wrapper.is-sticky .site-navbar .site-menu>li>a.active {
-  color: #373a6d !important;
+  /* color: #373a6d !important; */
 }
 
 .sticky-wrapper .shrink {
