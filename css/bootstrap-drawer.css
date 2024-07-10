@@ -1,0 +1,58 @@
+.modal.drawer {
+  display: flex !important;
+  pointer-events: none;
+  padding: 0 !important;
+}
+
+.modal.drawer * {
+  pointer-events: none;
+}
+
+.modal.drawer .modal-dialog {
+  margin: 0px;
+  display: flex;
+  flex: auto;
+  transform: translate(25%, 0);
+}
+
+.modal.drawer .modal-dialog .modal-content {
+  border: none;
+  border-radius: 0px;
+}
+
+.modal.drawer .modal-dialog .modal-header {
+  background: #373a6d;
+  color: white;
+  border-radius: 0;
+}
+
+.modal.drawer .modal-dialog .modal-content .modal-body {
+  overflow: auto;
+  color: black;
+  background-color: #f0f0f0;
+}
+
+.modal.drawer.show {
+  pointer-events: auto;
+}
+
+.modal.drawer.show * {
+  pointer-events: auto;
+}
+
+.modal.drawer.show .modal-dialog {
+  transform: translate(0, 0);
+}
+
+.modal.drawer.right-align {
+  flex-direction: row-reverse;
+}
+
+.modal.drawer.left-align:not(.show) .modal-dialog {
+  transform: translate(-25%, 0);
+}
+
+.close,
+.close:hover {
+  color: white !important;
+}
