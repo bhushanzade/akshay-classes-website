@@ -27,13 +27,16 @@
 
   <link rel="stylesheet" href="css/bootstrap-drawer.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
 
-
+  <div id="toast-container" class="toastr-container">
+    <div id="toast" class="toastr"></div>
+  </div>
   <div class="site-wrap">
-
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -43,39 +46,8 @@
       <div class="site-mobile-menu-body"></div>
     </div>
 
-
     <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
-
-      <div class="container">
-        <div class="row align-items-center">
-
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">Coaching<span class="text-primary">.</span>
-              </a></h1>
-          </div>
-
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <!-- <li><a href="#about-section" class="nav-link">About</a></li> -->
-                <li><a href="#batch-section" class="nav-link">Batch</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-
-
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#"
-              class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
-
-        </div>
-      </div>
-
     </header>
-
 
     <section class="site-blocks-cover overflow-hidden">
       <div class="container">
@@ -102,23 +74,29 @@
       </div>
     </section>
 
-    <!-- <section class="site-section" id="about-section">
+    <section class="site-section" id="about-section">
       <div class="container">
 
         <div class="row">
 
           <div class="col-md-5 mr-auto mb-5">
-            <h2 class="text-black mb-4">Welcome To My Website</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, temporibus accusamus placeat recusandae
-              laudantium id quia obcaecati explicabo ea commodi.</p>
-            <p>Utilize five years of industrial experience to deliver comprehensive computer language classes,
-              emphasizing practical
-              application, foundational concepts, and effective problem-solving methodologies to empower students in
-              their programming
-              journey.</p>
+            <h2 class="text-black mb-4">Welcome To My Technical Class</h2>
+            <p>
+              I am Akshay Bhagwat, I have experience in research and development with an M.Tech (Industrial Mathematics
+              with Computer
+              Application)
+              qualification.
+            </p>
+            <p>
+              As I begin classes, I look forward to using my industry knowledge to contribute to projects and
+              discussions in a collaborative learning environment.
+            </p>
           </div>
-          <div class="col-md-6 ml-auto">
-            <div class="row">
+          <div class="col-md-3 ml-auto">
+            <div>
+              <img src="images/Photo_page-0001.jpg" alt="Akshay Bhagwat" width="90%" style="mix-blend-mode:multiply;">
+            </div>
+            <!-- <div class="row">
               <div class="col-md-6">
                 <div class="service px-0">
                   <div class="icon"><span class="flaticon-money-bag-with-dollar-symbol display-2 text-primary"></span>
@@ -138,13 +116,86 @@
                     texts.</p>
                 </div>
               </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="service px-0">
+              <div class="icon"><span class="flaticon-manager display-2 text-primary"></span></div>
+              <h4 class="text-black mb-3">Who We</h4>
+              <p>
+                Our goal is to apply industry expertise to enhance students knowledge and
+                contribute effectively.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service px-0">
+              <div class="icon"><span class="flaticon-target display-2 text-primary"></span></div>
+              <h4 class="text-black mb-3">Mission</h4>
+              <p>Our mission is to share knowledge with everyone and promote the idea that practical experience matters
+                more than formal
+                education.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service px-0">
+              <div class="icon"><span class="flaticon-elearning display-2 text-primary"></span></div>
+              <h4 class="text-black mb-3">Vision</h4>
+              <p>
+                We aim to empower individuals with the tools and skills needed to thrive in practical, real-world
+                scenarios, fostering a
+                culture where actionable knowledge drives innovation and success.
+              </p>
             </div>
           </div>
         </div>
 
-
       </div>
-    </section> -->
+      <div id="projectFacts" class="projectFactssectionClass">
+        <div class="fullWidth eight columns">
+          <div class="projectFactsWrap ">
+            <div id="yearsstat" class="item wow fadeInUpBig animated animated" data-number="12"
+              style="visibility: visible;">
+              <div class="icon display-2">
+                <div class="fa fa-clock-o text-white" aria-hidden="true"></div>
+              </div>
+              <p id="number1" class="number">12</p>
+              <span></span>
+              <p>Years</p>
+            </div>
+            <div id="studentstat" class="item wow fadeInUpBig animated animated" data-number="55"
+              style="visibility: visible;">
+              <div class="icon display-2">
+                <div class="fa fa-smile-o text-white" aria-hidden="true"></div>
+              </div>
+              <p id="number2" class="number">55</p>
+              <span></span>
+              <p>Happy Students</p>
+            </div>
+            <div id="batchesstat" class="item wow fadeInUpBig animated animated" data-number="359"
+              style="visibility: visible;">
+              <div class="icon">
+                <div class="flaticon-group display-2 text-white"></div>
+              </div>
+              <p id="number3" class="number">359</p>
+              <span></span>
+              <p>Batches</p>
+            </div>
+            <div id="studentplacestat" class="item wow fadeInUpBig animated animated" data-number="246"
+              style="visibility: visible;">
+              <div class="icon">
+                <div class="flaticon-target display-2 text-white"></div>
+              </div>
+              <p id="number4" class="number">246</p>
+              <span></span>
+              <p>Student Placed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <!-- <section class="site-section bg-light" id="training-section">
@@ -203,7 +254,7 @@
       </div>
     </section> -->
 
-    <section class="site-section" id="batch-section">
+    <section class="site-section" id="batch-section" data-aos="fade">
       <div class="container">
         <div class="row justify-content-center" data-aos="fade-up">
           <div class="col-lg-6 text-center mb-5">
@@ -558,15 +609,23 @@
 
     <section class="site-section" id="testimonials-section" data-aos="fade">
       <div class="container">
-
         <div class="row justify-content-center" data-aos="fade-up">
           <div class="col-lg-6 text-center mb-5">
-            <h2 class="text-black mb-2">Happy Customers</h2>
+            <h2 class="text-black mb-2">Happy Students Feedbacks</h2>
+          </div>
+        </div>
+        <div id="review-feedbacks">
+          <div id="no-review-feedbacks">
+            <div class="block-testimony-1 text-center">
+              <blockquote class="mb-4">
+                <p style="font-size: 34px;">Be the first reviewer</p>
+              </blockquote>
+            </div>
           </div>
         </div>
         <div data-aos="fade-up" data-aos-delay="200">
-          <div class="owl-carousel owl-style owl-carousel-one no-owl-nav">
-            <div>
+          <div id="review-owl-data" class="owl-carousel owl-style owl-carousel-one no-owl-nav">
+            <!-- <div>
               <div class="block-testimony-1 text-center">
 
                 <blockquote class="mb-4">
@@ -576,50 +635,88 @@
                 </blockquote>
                 <h3 class="font-size-20 text-black">Ricky Fisher</h3>
               </div>
-            </div>
-            <div>
-              <div class="block-testimony-1 text-center">
-                <blockquote class="mb-4">
-                  <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost
-                    unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to
-                    leave for the far World of Grammar.&rdquo;</p>
-                </blockquote>
-                <h3 class="font-size-20 mb-4 text-black">Ken Davis</h3>
+            </div> -->
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400" class="text-center"
+          style="justify-content: center; align-items: center; display: flex;" id="openSubmitReviewBtnContainer">
+          <button class="w-25 btn btn-block btn-primary text-white py-2 px-5" type="button"
+            id="openSubmitReviewBtn">Submit Your Feedback</button>
+          <a class="w-25 btn btn-primary text-white py-2 px-5 mx-2" type="button" href="/feedback.html">
+            All Feedbacks
+          </a>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="400" id="openReviewSubmit"
+          style="margin-top: 20px; display: none;">
+          <div class="col-lg-12 mb-5">
+            <form id="reviewForm">
+              <h5 style="font-weight: 600; color: black;">Submit your feedback</h5>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" id="name" class="form-control" placeholder="Full Name" required>
+                  <div style="text-align: left;" id="name-errors"></div>
+                </div>
               </div>
-            </div>
-            <div>
-              <div class="block-testimony-1 text-center">
-                <blockquote class="mb-4">
-                  <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary
-                    regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your
-                    mouth.&rdquo;</p>
-                </blockquote>
-                <h3 class="font-size-20 text-black">Mellisa Griffin</h3>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="tel" id="mobile" class="form-control" placeholder="Mobile number" required>
+                  <div style="text-align: left;" id="mobile-errors"></div>
+                </div>
               </div>
-            </div>
-            <div>
-              <div class="block-testimony-1 text-center">
-                <blockquote class="mb-4">
-                  <p>&ldquo;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est maxime adipisci incidunt
-                    voluptatum pariatur. Officia eaque ipsum ducimus. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.&rdquo;</p>
-                </blockquote>
-                <h3 class="font-size-20 mb-4 text-black">Robert Steward</h3>
+
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" id="email" class="form-control" placeholder="Email address" required>
+                  <div style="text-align: left;" id="email-errors"></div>
+                </div>
               </div>
-            </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <textarea name="message" id="message" class="form-control" placeholder="Write your message." cols="30"
+                    rows="10" required></textarea>
+                  <div style="text-align: left;" id="message-errors"></div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <p style="margin: 0;">Rating</p>
+                  <span class="ratingstar fa fa-star"></span>
+                  <span class="ratingstar fa fa-star"></span>
+                  <span class="ratingstar fa fa-star"></span>
+                  <span class="ratingstar fa fa-star"></span>
+                  <span class="ratingstar fa fa-star"></span>
+                  <input type="hidden" id="rating">
+                  <div style="text-align: left;" id="rating-errors"></div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6 mr-auto">
+                  <input type="button" id="saveReviewBtn" class="btn btn-block btn-primary text-white py-2 px-5"
+                    value="Save Feedback" onclick="saveReview(event)">
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="site-section bg-light" id="contact-section">
+    <div class="site-section bg-light" id="contact-section" data-aos="fade">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center mb-5">
             <h2 class="text-black">Contact Me</h2>
           </div>
         </div>
-        <div class="row mb-5">
+        <div data-aos="fade-up" data-aos-delay="200">
+          <div id="googleMap" style="width:100%;height:400px;"></div>
+        </div>
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="400">
           <div class="mb-4 mb-lg-0 col-md-6 col-lg-4">
             <p class="mb-0 font-weight-bold text-primary">Address</p>
             <p class="mb-4">2ab Technologies, 1st Floor of Pardeshi Complex, Shani Patangan, Near Bus Stand, Yeola,
@@ -634,94 +731,55 @@
             <p class="mb-0"><a href="#">akshay@gmail.com</a></p>
           </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-delay="600">
           <div class="col-lg-12 mb-5">
-            <form action="#" method="post">
+            <form id="contactForm">
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Full Name" required>
+                  <input type="text" id="name" class="form-control" placeholder="Full Name" required>
+                  <div style="text-align: left;" id="name-errors"></div>
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="tel" class="form-control" placeholder="Mobile number" required>
+                  <input type="tel" id="mobile" class="form-control" placeholder="Mobile number" required>
+                  <div style="text-align: left;" id="mobile-errors"></div>
                 </div>
               </div>
 
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Email address" required>
+                  <input type="text" id="email" class="form-control" placeholder="Email address" required>
+                  <div style="text-align: left;" id="email-errors"></div>
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"
-                    required></textarea>
+                  <textarea name="message" id="message" class="form-control" placeholder="Write your message." cols="30"
+                    rows="10" required></textarea>
+                  <div style="text-align: left;" id="message-errors"></div>
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-md-6 mr-auto">
-                  <input type="submit" class="btn btn-block btn-primary text-white py-2 px-5" value="Send Message">
+                  <input type="button" id="createContactMessageBtn"
+                    class="btn btn-block btn-primary text-white py-2 px-5" value="Send Message"
+                    onclick="createContactMessage(event)">
                 </div>
               </div>
             </form>
           </div>
-
         </div>
       </div>
     </div>
 
 
 
-    <footer class="site-footer bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="footer-heading mb-4">About Coaching</h2>
-            <p>Empower students to independently learn, apply, and master coding and debugging skills across diverse
-              technologies,
-              fostering a deep understanding of programming principles and their practical applications.</p>
-          </div>
+    <footer class="site-footer bg-primary" data-aos="fade">
 
-
-          <div class="col-md-3 ml-auto">
-            <h2 class="footer-heading mb-4">Quick Links</h2>
-            <ul class="list-unstyled">
-              <!-- <li><a href="#about-section" class="smoothscroll">About Us</a></li> -->
-              <li><a href="#batch-section" class="smoothscroll">Batch</a></li>
-              <!-- <li><a href="#services-section" class="smoothscroll">Testimonials</a></li> -->
-              <li><a href="#testimonials-section" class="smoothscroll">Testimonials</a></li>
-              <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-2">
-            <div class="mb-5">
-              <h2 class="footer-heading mb-4">Follow Us</h2>
-              <a href="#" class="d-block pl-0 pr-3"><span class="icon-facebook"></span>&nbsp;&nbsp;Facebook</a>
-              <a href="#" class="d-block pl-0 pr-3"><span class="icon-twitter"></span>&nbsp;&nbsp;Twitter</a>
-              <a href="#" class="d-block pl-0 pr-3"><span class="icon-instagram"></span>&nbsp;&nbsp;Instagram</a>
-              <a href="#" class="d-block pl-0 pr-3"><span class="icon-linkedin"></span>&nbsp;&nbsp;Linked-In</a>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="row pt-5 mt-5 text-left">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p>Copyright &copy;
-                <script>document.write(new Date().getFullYear());</script> All rights reserved | Developed by <a
-                  href="https://procodeprogramming.com/profile/bhushan" target="_blank">Bhushan</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </footer>
 
 
@@ -771,6 +829,39 @@
 
   <script src="js/main.js"></script>
   <script src="js/modal.js"></script>
+  <script type="module" src="js/contact.js"></script>
+  <script type="module" src="js/review.js"></script>
+  <script type="module" src="js/admin-stats.js"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
+
+  <script>
+    function myMap() {
+      var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 5,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+  </script>
+
+  <script>
+    jQuery(document).ready(function ($) {
+      getStats(true);
+      getBestReviews();
+      $("#openSubmitReviewBtn").on("click", () => {
+        $("#openSubmitReviewBtnContainer").hide();
+        $("#openReviewSubmit").show();
+      });
+
+      $('.ratingstar').click(function () {
+        $('.ratingstar').removeClass('checked');
+        $(this).prevAll().addBack().addClass('checked');
+        var checkedCount = $('.ratingstar.checked').length;
+        $('#rating').val(checkedCount);
+      });
+    })
+
+  </script>
 
 </body>
 

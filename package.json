@@ -20,6 +20,7 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "canvas": "^2.11.2",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jimp": "^0.22.12",
     "lodash": "^4.17.21",
@@ -27,6 +28,8 @@
     "mysql": "^2.18.1",
     "mysql2-promise": "^0.1.4",
     "nodemailer": "^6.9.14",
+    "nodemailer-express-handlebars": "^6.1.2",
+    "path": "^0.12.7",
     "promise-mysql": "^5.2.0"
   },
   "devDependencies": {

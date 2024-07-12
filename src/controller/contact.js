@@ -1,42 +1,40 @@
-const { GetContactMessages, SaveContactMessage } = require("../service/contact");
+const { SaveContactMessage, GetContactMessages } = require("../service/contact");
 const catchAsync = require("../util/catch-async");
-const { conn } = require("../util/mysql");
 const SendEmail = require("../util/send-mail")
 
 exports.createContactMessage = catchAsync(async (req, res) => {
   await req.connection.beginTransaction();
   await SaveContactMessage(req.connection, req.body);
   await req.connection.commit();
-  return res.json({
-    message: "Message has been sent successfully. "
+
+  await SendEmail({
+    to: process.env.SELF_EMAIL,
+    subject: "Contact Form",
+    template: 'contact-form',
+    context: req.body
   });
 
-  // const obj = {
-  //   to: "bhushanzade50@gmail.com",
-  //   subject: "Contact form",
-  //   template: `
-  //     <table>
-  //       <tr>
-  //         <td>Name</td>
-  //         <td>Bhushan Zade</td>
-  //       </tr>
-  //       <tr>
-  //         <td>Mobile</td>
-  //         <td>8329042250</td>
-  //       </tr>
-  //       <tr>
-  //         <td>Email</td>
-  //         <td>bhushanzade50@gmail.com</td>
-  //       </tr>
-  //       <tr>
-  //         <td>Message</td>
-  //         <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est maxime adipisci incidunt voluptatum pariatur. Officia
-  //         eaque ipsum ducimus.</td>
-  //       </tr>
-  //     </table>
-  //   `
-  // }
-  // SendEmail(obj)
+  await SendEmail({
+    to: req.body.email,
+    subject: "Thank You for Contacting Us",
+    template: 'contact-thanks',
+    context: req.body
+  });
+
+  return res.json({
+    message: "Message has been sent successfully."
+  });
 
 })
 
+
+exports.getContacts = catchAsync(async (req, res) => {
+  const { isLogin } = req.query;
+  if (!!isLogin != true) {
+    return res.status(404).json({
+      message: "Page not found"
+    })
+  }
+  const items = await GetContactMessages(req.connection);
+  return res.json(items);
+});

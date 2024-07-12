@@ -1,4 +1,6 @@
 const nodemail = require('nodemailer');
+const hbs = require('nodemailer-express-handlebars');
+const path = require('path');
 function SendEmail(obj) {
   const mail = nodemail.createTransport({
     service: 'gmail',
@@ -12,11 +14,24 @@ function SendEmail(obj) {
     }
   });
 
+  console.log();
+
+  const handlebarOptions = {
+    viewEngine: {
+      partialsDir: path.resolve('./src/templates/'),
+      defaultLayout: false,
+    },
+    viewPath: path.resolve('./src/templates/'),
+  };
+
+  mail.use('compile', hbs(handlebarOptions));
+
   const mailOptions = {
-    from: "Contact Form <procodeprogramming@gmail.com>",
+    from: "Akshay Classes <procodeprogramming@gmail.com>",
     to: obj.to,
     subject: obj.subject,
-    html: obj.template,
+    template: obj.template, // 'forget_password',
+    context: obj.context
   };
 
   return mail.sendMail(mailOptions);
