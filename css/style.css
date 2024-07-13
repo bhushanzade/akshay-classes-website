@@ -144,7 +144,8 @@ body:after {
 }
 
 .site-section {
-  padding: 2.5em 0;
+  /* padding: 2.5em 0; */
+  padding: 5em 0;
 }
 
 @media (min-width: 768px) {
@@ -2949,5 +2950,18 @@ span.fa-star.checked {
 @media (max-width: 786px) {
   .projectFactsWrap .item {
     flex: 0 0 50%;
+  }
+
+  .site-blocks-cover p {
+    color: #fff;
+    font-size: 0.9rem;
+  }
+
+  #about-section .img-responsive {
+    padding: 0 30%;
+  }
+
+  #about-section img {
+    width: 100%;
   }
 }

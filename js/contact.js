@@ -43,7 +43,7 @@ export async function createContactMessage(event) {
   const contact = document.getElementById("contactForm");
   validationRules.map(x => {
     const field = contact.querySelector(`#${x.name}`);
-    formError = validate(x.name, field.value, x.rules);
+    formError = validate(x.name, field.value, x.rules, contact);
     postData[x.name] = field.value
   });
   if (formError && Object.keys(formError).length > 0) {

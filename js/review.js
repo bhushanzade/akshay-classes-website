@@ -51,7 +51,7 @@ export async function saveReview(event) {
   const postData = {}
   validationRules.map(x => {
     const field = review.querySelector(`#${x.name}`);
-    formError = validate(x.name, field.value, x.rules);
+    formError = validate(x.name, field.value, x.rules, review);
     postData[x.name] = field.value
   });
 

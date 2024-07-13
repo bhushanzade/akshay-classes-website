@@ -1,6 +1,6 @@
 const formError = {};
 
-export function validate(eleName, value, rules) {
+export function validate(eleName, value, rules, parentEle) {
   const messages = [];
   if (rules.trim === true && typeof value === 'string') {
     value = value.trim();
@@ -68,12 +68,16 @@ export function validate(eleName, value, rules) {
       messages.push(rules.matchField.message);
     }
   }
-  showErrors(messages, eleName);
+  showErrors(messages, eleName, parentEle);
   return formError;
 }
 
-export function showErrors(messages, eleName) {
-  const errsEle = document.getElementById(eleName + "-errors");
+export function showErrors(messages, eleName, parentEle) {
+  const getEle = () => {
+    if (parentEle) return parentEle.querySelector(`#${eleName}-errors`);
+    return document.getElementById(eleName + "-errors");
+  }
+  const errsEle = getEle();
   if (errsEle) {
     errsEle.innerHTML = "";
     if (messages.length > 0) {
