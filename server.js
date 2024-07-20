@@ -1,8 +1,8 @@
 require('dotenv').config();
 const express = require('express'),
   app = express(),
-  port = 3000;
-
+  path = require('path'),
+  port = process.env.PORT ?? 3000;
 app.locals.moment = require('moment');
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -10,13 +10,11 @@ app.use(function (req, res, next) {
   res.header('Access-Control-Allow-Methods', 'PATCH, PUT, POST, GET, DELETE, OPTIONS, HEAD');
   next();
 });
-
+app.use(express.static(path.join(__dirname, 'public')));
 bodyParser = require('body-parser');
-
 app.use(bodyParser.json({
   limit: '50mb'
 }));
-
 app.use(bodyParser.urlencoded({
   limit: '50mb',
   parameterLimit: 100000,

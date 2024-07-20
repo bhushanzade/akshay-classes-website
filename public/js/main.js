@@ -325,7 +325,7 @@ jQuery(document).ready(function ($) {
 		dataType: 'html',
 		success: function (response) {
 			$('.site-navbar').html(response);
-			const url = !window.location.href.includes("/index.html") ? "/index.html" : "";
+			const url = !window.location.href.includes("/index.html") ? "/" : "";
 			const isLoggedIn = localStorage.getItem("classIsLoggedIn");
 			$(".site-menu").empty();
 			const links = [
@@ -385,7 +385,7 @@ jQuery(document).ready(function ($) {
 			$('#currentYear').text(new Date().getFullYear());
 			$("#footer-links").empty();
 			const isLoggedIn = localStorage.getItem("classIsLoggedIn");
-			const url = !window.location.href.includes("/index.html") ? "/index.html" : "";
+			const url = !window.location.href.includes("/index.html") ? "/" : "";
 			const links = [
 				{
 					name: 'About',
