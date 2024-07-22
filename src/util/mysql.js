@@ -5,15 +5,10 @@ const conn = async () => {
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PWD,
-    database: process.env.DB_NAME
+    database: process.env.DB_NAME,
+    port: 3306
   });
 }
-
-
-// conn.connect((err) => {
-//   if (!err) console.log('DB Connected...');
-//   else console.log('DB not connected \n Error: ' + JSON.stringify(err));
-// })
 
 const db = async (query, data) => {
   const connection = await conn();

@@ -7,7 +7,8 @@ const transaction = async (req, res, next) => {
     next();
   } catch (error) {
     return res.status(400).json({
-      message: "Database error occured"
+      message: "Database error occured",
+      error
     })
   }
 }
