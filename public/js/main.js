@@ -342,7 +342,7 @@ jQuery(document).ready(function ($) {
 					link: url + "#batch-section"
 				},
 				{
-					name: 'Testimonials',
+					name: 'Testimonial',
 					link: url + "#testimonials-section"
 				},
 				{
@@ -396,7 +396,7 @@ jQuery(document).ready(function ($) {
 					link: url + "#batch-section"
 				},
 				{
-					name: 'Testimonials',
+					name: 'Testimonial',
 					link: url + "#testimonials-section"
 				},
 				{
