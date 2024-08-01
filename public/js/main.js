@@ -271,7 +271,9 @@ jQuery(document).ready(function ($) {
 	siteDatePicker();
 
 	var siteSticky = function () {
-		$(".js-sticky-header").sticky({ topSpacing: 0 });
+		try {
+			$(".js-sticky-header").sticky({ topSpacing: 0 });
+		} catch (error) { }
 	};
 	siteSticky();
 
@@ -342,6 +344,10 @@ jQuery(document).ready(function ($) {
 					link: url + "#batch-section"
 				},
 				{
+					name: 'Compiler',
+					link: "/onlinecompiler.html"
+				},
+				{
 					name: 'Testimonial',
 					link: url + "#testimonials-section"
 				},
@@ -394,6 +400,10 @@ jQuery(document).ready(function ($) {
 				{
 					name: 'Batches',
 					link: url + "#batch-section"
+				},
+				{
+					name: 'Compiler',
+					link: "/onlinecompiler.html"
 				},
 				{
 					name: 'Testimonial',
