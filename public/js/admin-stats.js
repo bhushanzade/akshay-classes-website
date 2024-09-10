@@ -33,7 +33,8 @@ const validationRules = [
 ];
 
 async function getStats(isHomeStat) {
-  const url = new URL(config.v1.apiUrl + "/adminhomestats");
+  // const url = new URL(config.v1.apiUrl + "/adminhomestats");
+  const url = "/adminhomestats";
   try {
     const res = await fetch(url, {
       method: "GET",
@@ -89,7 +90,9 @@ async function updateStats() {
   document.getElementById("updateStatBtn").disabled = true;
   document.getElementById("updateStatBtn").value = "Please Wait ...";
   try {
-    const res = await fetch(config.v1.apiUrl + "/adminhomestats/update", {
+    // const url = config.v1.apiUrl + "/adminhomestats/update";
+    const url = "/adminhomestats/update";
+    const res = await fetch(url, {
       method: "PUT",
       headers: {
         'Content-Type': 'application/json'

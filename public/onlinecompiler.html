@@ -10,11 +10,36 @@
   <meta name="language" content="English">
   <meta charset='UTF-8'>
   <meta name="description"
-    content="Empower students to independently learn, apply, and master coding and debugging skills across diverse technologies, fostering a deep understanding of programming principles and their practical applications.">
+    content="Codeboard is an online IDE provided PCP that facilitates the writing, compiling, and execution of your programs effortlessly. It offers a user-friendly interface for compiling your code. The supported languages include C, C++, Python, PHP, and HTML.">
   <meta name="keywords"
     content="2ab technology, technology, c classes, c lectures, yeola c classes, yeola c language class, cpp classes, cpp classes in yeola, computer classes in yeola, languages classes in yeola, C programming classes Yeola, Learn C programming Yeola, C programming course Yeola, C programming institute Yeola, Best C classes Yeola, Affordable C++ classes Yeola, C++ programming course Yeola, C++ programming tutorials Yeola, C++ programming institute Yeola, Best C++ classes Yeola, Learn programming languages Yeola, Computer programming classes Yeola, Programming courses Yeola, Programming languages institute Yeola, coding classes, coding classes in yeola, C programming and data structures classes Yeola, Learn data structures with C Yeola, Data structures tutorials in C Yeola, Best institute for C programming and data structures Yeola, C programming and data structures course Yeola, C++ programming and data structures classes Yeola, Learn data structures with C++ Yeola, Data structures tutorials in C++ Yeola, Best institute for C++ programming and data structures Yeola, C++ programming and data structures course Yeola, Computer science classes in Yeola, Programming languages and data structures institute Yeola">
   <meta name="robots" content="index,follow">
   <meta name="author" content="2ab Technology">
+
+  <!-- Facebook tags -->
+  <meta property="og:title" content="Online Compiler &mdash; 2ab Technology">
+  <meta property="og:description"
+    content="Codeboard is an online IDE provided PCP that facilitates the writing, compiling, and execution of your programs effortlessly. It offers a user-friendly interface for compiling your code. The supported languages include C, C++, Python, PHP, and HTML.">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:url" content="https://2abtechnology.in/onlinecompiler.html">
+  <meta property="og:site_name" content="2ab Technology">
+  <meta property="og:type" content="website">
+  <meta property="og:author" content="2ab Technology">
+  <!-- end Facbook tags -->
+
+  <!-- Twitter tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@2abTechnology">
+  <meta name="twitter:creator" content="@2abTechnology">
+  <meta name="twitter:url" content="https://2abtechnology.in/onlinecompiler.html">
+  <meta name="twitter:title" content="2ab Technology">
+  <meta name="twitter:description"
+    content="Codeboard is an online IDE provided PCP that facilitates the writing, compiling, and execution of your programs effortlessly. It offers a user-friendly interface for compiling your code. The supported languages include C, C++, Python, PHP, and HTML.">
+  <meta name="twitter:text:description"
+    content="Codeboard is an online IDE provided PCP that facilitates the writing, compiling, and execution of your programs effortlessly. It offers a user-friendly interface for compiling your code. The supported languages include C, C++, Python, PHP, and HTML.">
+  <meta name="twitter:image" content="images/logo.png">
+  <meta name="twitter:author" content="2ab Technology">
+  <!-- end Twitter tags -->
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNY4EJ8HVH"></script>
@@ -64,12 +89,17 @@
     .site-blocks-cover,
     .site-blocks-cover>.container>.row {
       height: calc(10vh);
-      min-height: 100px;
+      min-height: 30px;
     }
 
     @media screen and (max-width: 600px) {
       .site-section-codeboard {
         padding: 0px;
+      }
+
+      .site-blocks-cover,
+      .site-blocks-cover>.container>.row {
+        height: 68px;
       }
     }
   </style>
@@ -101,7 +131,7 @@
 
     <section class="site-section-codeboard">
       <iframe id="onlinecompilerpcp" class="embed-responsive embed-responsive-16by9 gh-fit gh-fullwidth"
-        src="http://localhost:4500/onlinecompiler/fullscreen" frameborder="0" width="100%" allowfullscreen
+        src="https://procodeprogramming.com/onlinecompiler/fullscreen" frameborder="0" width="100%" allowfullscreen
         onload="onloadIframe(this)"></iframe>
     </section>
 
@@ -142,40 +172,19 @@
       }
     })
 
-    // function onloadIframe(event) {
-    //   if (navigator.userAgent.match(/Android/i)
-    //     || navigator.userAgent.match(/webOS/i)
-    //     || navigator.userAgent.match(/iPhone/i)
-    //     || navigator.userAgent.match(/iPad/i)
-    //     || navigator.userAgent.match(/iPod/i)
-    //     || navigator.userAgent.match(/BlackBerry/i)
-    //     || navigator.userAgent.match(/Windows Phone/i)) {
-    //     $('#onlinecompilerpcp').css({
-    //       height: "100vh"
-    //     })
-    //   } else {
-    //     $('#onlinecompilerpcp').css({
-    //       height: window.outerHeight
-    //     })
-    //   }
-    //   console.log("window.navigator.userAgent ;", window.navigator.userAgent);
-    //   console.log("navigator.userAgent ;", navigator.userAgent);
-    // }
-
     function onloadIframe(event) {
-      console.log("website height", window.outerHeight);
       if (window.matchMedia("(max-width: 767px)").matches) {
-        console.log("mobile device");
+        // console.log("mobile device");
         $('#onlinecompilerpcp').css({
-          height: 1200
+          height: 1055
         })
       } else if (window.matchMedia("(max-width: 1024px)").matches) {
-        console.log("tablet device");
+        // console.log("tablet device");
         $('#onlinecompilerpcp').css({
           height: window.outerHeight >= 600 ? 600 : window.outerHeight <= 400 ? 600 : window.outerHeight
         })
       } else {
-        console.log("desktop or laptop device");
+        // console.log("desktop or laptop device");
         $('#onlinecompilerpcp').css({
           height: window.outerHeight
         })

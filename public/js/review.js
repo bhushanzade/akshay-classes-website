@@ -58,7 +58,8 @@ export async function saveReview(event) {
   if (formError && Object.keys(formError).length > 0) {
     return;
   }
-  const url = config.v1.apiUrl + "/review";
+  // const url = config.v1.apiUrl + "/review";
+  const url = "/review";
   document.getElementById("saveReviewBtn").disabled = true;
   document.getElementById("saveReviewBtn").value = "Please Wait ...";
   try {
@@ -98,7 +99,8 @@ export async function saveReview(event) {
 }
 
 async function getBestReviews() {
-  const url = config.v1.apiUrl + "/review/best";
+  // const url = config.v1.apiUrl + "/review/best";
+  const url = "/review/best";
   try {
     const res = await fetch(url, {
       method: "GET",
@@ -161,11 +163,13 @@ async function getBestReviews() {
 }
 
 async function getReviews() {
-  const url = new URL(config.v1.apiUrl + "/review");
+  // const url = new URL(config.v1.apiUrl + "/review");
+  let url = "/review";
   const isLoggedin = !!localStorage.getItem("classIsLoggedIn");
-  if (isLoggedin) url.searchParams.append("isLogin", isLoggedin);
+  if (isLoggedin) {
+    url += "?isLogin=" + isLoggedin;
+  }
   try {
-    isLoggedin
     const res = await fetch(url, {
       method: "GET",
       headers: {
@@ -221,7 +225,8 @@ async function getReviews() {
 
 async function changeReviewStatus(id) {
   $.ajax({
-    url: config.v1.apiUrl + "/review/status/" + id,
+    // url: config.v1.apiUrl + "/review/status/" + id,
+    url: "/review/status/" + id,
     method: 'PUT',
     success: function (response) {
       showSuccessToast(response.message);

@@ -33,7 +33,8 @@ export async function loginAccount(event) {
   if (formError && Object.keys(formError).length > 0) {
     return;
   }
-  const url = config.v1.apiUrl + "/login";
+  // const url = config.v1.apiUrl + "/login";
+  const url = "/login";
   document.getElementById("loginbtn").disabled = true;
   document.getElementById("loginbtn").textContent = "Please Wait ...";
   try {

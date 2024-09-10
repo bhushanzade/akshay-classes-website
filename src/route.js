@@ -6,7 +6,7 @@ const validation = require('./validations/validation');
 const { reviewValidation } = require('./validations/review');
 const { saveReview, getBestReviews, getReviews, statusChangeReview } = require('./controller/reviews');
 const { login } = require('./controller/user');
-const { getHomeStats, updateHomeStat, editImage } = require('./controller/home-stats');
+const { getHomeStats, updateHomeStat } = require('./controller/home-stats');
 const { homeStatValidation } = require('./validations/home-stat');
 const router = express.Router();
 
@@ -18,8 +18,6 @@ router.get('/contacts', transaction, getContacts);
 router.get("/review", transaction, getReviews);
 router.get("/review/best", transaction, getBestReviews);
 router.get("/adminhomestats", transaction, getHomeStats);
-
-router.get("/logomake", editImage);
 
 
 router.post('/contact', validation(contactMessageValidation), transaction, createContactMessage);

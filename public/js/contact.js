@@ -49,7 +49,8 @@ export async function createContactMessage(event) {
   if (formError && Object.keys(formError).length > 0) {
     return;
   }
-  const url = config.v1.apiUrl + "/contact";
+  // const url = config.v1.apiUrl + "/contact";
+  const url = "/contact";
   document.getElementById("createContactMessageBtn").disabled = true;
   document.getElementById("createContactMessageBtn").value = "Please Wait ...";
   try {
@@ -84,9 +85,10 @@ export async function createContactMessage(event) {
 }
 
 async function contactMessages() {
-  const url = new URL(config.v1.apiUrl + "/contacts");
+  // const url = new URL(config.v1.apiUrl + "/contacts");
+  const url = "/contacts";
   const isLoggedin = !!localStorage.getItem("classIsLoggedIn");
-  if (isLoggedin) url.searchParams.append("isLogin", isLoggedin);
+  if (isLoggedin) url += "?isLogin" + isLoggedin;
   try {
     const res = await fetch(url, {
       method: "GET",
