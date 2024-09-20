@@ -3,7 +3,12 @@ Disallow: /
 
 User-agent: *
 Allow: /$
+Allow: /index.html
+Allow: /index
+Allow: /onlinecompiler.html
+Allow: /onlinecompiler
 Allow: /feedback.html
+Allow: /feedback
 Allow: /sitemap.xml
 Allow: /ads.txt
 Allow: /robots.txt
@@ -11,5 +16,7 @@ Allow: /BingSiteAuth.xml
 Allow: /google7beb1d7a25431fb2.html
 Allow: /yandex_4bb903b149b0bf10.html
 Allow: /favicon.ico
+Allow: /images/*
+Allow: /sitemap.xsl
 
 Sitemap: https://2abtechnology.in/sitemap.xml
