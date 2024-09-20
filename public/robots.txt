@@ -10,5 +10,6 @@ Allow: /robots.txt
 Allow: /BingSiteAuth.xml
 Allow: /google7beb1d7a25431fb2.html
 Allow: /yandex_4bb903b149b0bf10.html
+Allow: /favicon.ico
 
 Sitemap: https://2abtechnology.in/sitemap.xml
