@@ -39,53 +39,27 @@
     content="C, C++, Data Structure classes, Utilize industrial experience to deliver comprehensive computer language classes, emphasizing practical application, foundational concepts, and effective problem-solving methodologies to empower students in their programming journey.">
   <meta name="twitter:image" content="images/logo.png">
   <meta name="twitter:author" content="2ab Technology">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNY4EJ8HVH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-TNY4EJ8HVH');
-  </script>
-
   <link id="CANONICALLINK" rel="canonical" href="https://2abtechnology.in/">
   <script class="structured-data" type="application/ld+json">
     {"@context":"http://schema.org","@type":"WebSite","url":"https://2abtechnology.in","name":"2ab Technology"}
   </script>
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
-  <link rel="stylesheet" href="css/aos.css">
-
-  <link rel="stylesheet" href="css/style.css">
-
-  <link rel="stylesheet" href="css/bootstrap-drawer.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet" media="print"
+    onload="this.media='all'">
+  <link rel="stylesheet" href="css/bootstrap.min.css" as="style">
+  <link rel="stylesheet" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/owl.carousel.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/bootstrap-drawer.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="fonts/icomoon/style.min.css" media="print" onload="this.media='all'">
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
-
-  <div id="toast-container" class="toastr-container">
-    <div id="toast" class="toastr"></div>
-  </div>
   <div class="site-wrap">
+    <div id="toast-container" class="toastr-container">
+      <div id="toast" class="toastr"></div>
+    </div>
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -96,16 +70,33 @@
     </div>
 
     <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div>
+          <img src="./images/logo_nav.png" alt="" width="250" height="42" loading="lazy">
+        </div>
+        <nav class="site-navigation position-relative text-right d-none d-xl-block" role="navigation">
+          <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+            <li><a href="#home-section" class="nav-link">Home</a></li>
+            <li><a href="#about-section" class="nav-link">About</a></li>
+            <li><a href="#batch-section" class="nav-link">Batch</a></li>
+            <li><a href="/onlinecompiler.html" class="nav-link">Compiler</a></li>
+            <li><a href="#testimonials-section" class="nav-link">Testimonial</a></li>
+            <li><a href="/feedback.html" class="nav-link">Feedbacks</a></li>
+            <li><a href="#contact-section" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="site-menu-toggle js-menu-toggle d-xl-none ml-md-0 py-3 w-100 text-right" title="Toggle Menu">
+          <span class="icon-menu h3"></span>
+        </a>
+      </div>
     </header>
 
     <section class="site-blocks-cover overflow-hidden">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 align-self-center">
-
             <div class="row">
-              <div class="col-lg-11">
-
+              <div class="col-lg-11" id="site-blocks-content">
                 <h1>I'm Professional <span class="typed-words"></span></h1>
                 <p>Utilize industrial experience to deliver comprehensive computer language classes, emphasizing
                   practical
@@ -115,19 +106,15 @@
                 <p><a href="#contact-section" class="btn btn-warning px-5 py-3 text-white smoothscroll">Contact Me</a>
                 </p>
               </div>
-
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
     <section class="site-section" id="about-section">
       <div class="container">
-
         <div class="row row-flip">
-
           <div class="col-md-5 mr-auto mb-5">
             <h2 class="text-black mb-4">Welcome To My Technical Class</h2>
             <p>
@@ -142,37 +129,17 @@
             </p>
           </div>
           <div class="col-md-3 ml-auto">
-            <div class="img-responsive">
-              <img src="images/Photo_page-0001.jpg" alt="Akshay Bhagwat" width="90%" style="mix-blend-mode:multiply;">
+            <div class="img-responsive text-center">
+              <img src="images/author.png" alt="Akshay Bhagwat" width="237" height="319"
+                style="mix-blend-mode:multiply; filter: drop-shadow(0px 5px 5px black);" loading="lazy">
             </div>
-            <!-- <div class="row">
-              <div class="col-md-6">
-                <div class="service px-0">
-                  <div class="icon"><span class="flaticon-money-bag-with-dollar-symbol display-2 text-primary"></span>
-                  </div>
-                  <h4 class="text-black mb-3">Means of Living</h4>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind
-                    texts.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="service px-0">
-                  <div class="icon"><span class="flaticon-manager display-2 text-primary"></span></div>
-                  <h4 class="text-black mb-3">Transform Lives</h4>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind
-                    texts.</p>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
         <div class="row text-center">
           <div class="col-md-4">
             <div class="service px-0">
-              <div class="icon"><span class="flaticon-manager display-2 text-primary"></span></div>
-              <h4 class="text-black mb-3">Who We</h4>
+              <div class="icon"><span class="icon-user-circle-o display-2 text-primary"></span></div>
+              <h3 class="text-black mb-3">Who We</h3>
               <p>
                 Our goal is to apply industry expertise to enhance students knowledge and
                 contribute effectively.
@@ -181,8 +148,8 @@
           </div>
           <div class="col-md-4">
             <div class="service px-0">
-              <div class="icon"><span class="flaticon-target display-2 text-primary"></span></div>
-              <h4 class="text-black mb-3">Mission</h4>
+              <div class="icon"><span class="icon-rocket display-2 text-primary"></span></div>
+              <h3 class="text-black mb-3">Mission</h3>
               <p>Our mission is to share knowledge with everyone and promote the idea that practical experience matters
                 more than formal
                 education.</p>
@@ -190,8 +157,8 @@
           </div>
           <div class="col-md-4">
             <div class="service px-0">
-              <div class="icon"><span class="flaticon-elearning display-2 text-primary"></span></div>
-              <h4 class="text-black mb-3">Vision</h4>
+              <div class="icon"><span class="icon-graduation-cap display-2 text-primary"></span></div>
+              <h3 class="text-black mb-3">Vision</h3>
               <p>
                 We aim to empower individuals with the tools and skills needed to thrive in practical, real-world
                 scenarios, fostering a
@@ -202,13 +169,13 @@
         </div>
 
       </div>
-      <div id="projectFacts" class="projectFactssectionClass">
+      <div id="projectFacts" class="projectFactssectionClass" tabindex="-1">
         <div class="fullWidth eight columns">
           <div class="projectFactsWrap ">
             <div id="yearsstat" class="item wow fadeInUpBig animated animated" data-number="12"
               style="visibility: visible;">
               <div class="icon display-2">
-                <div class="fa fa-clock-o text-white" aria-hidden="true"></div>
+                <div class="icon-clock-o text-white" aria-hidden="true"></div>
               </div>
               <p id="number1" class="number">12</p>
               <span></span>
@@ -217,7 +184,7 @@
             <div id="studentstat" class="item wow fadeInUpBig animated animated" data-number="55"
               style="visibility: visible;">
               <div class="icon display-2">
-                <div class="fa fa-smile-o text-white" aria-hidden="true"></div>
+                <div class="icon-smile-o text-white" aria-hidden="true"></div>
               </div>
               <p id="number2" class="number">55</p>
               <span></span>
@@ -226,7 +193,7 @@
             <div id="batchesstat" class="item wow fadeInUpBig animated animated" data-number="359"
               style="visibility: visible;">
               <div class="icon">
-                <div class="flaticon-group display-2 text-white"></div>
+                <div class="icon-group display-2 text-white"></div>
               </div>
               <p id="number3" class="number">359</p>
               <span></span>
@@ -235,7 +202,7 @@
             <div id="studentplacestat" class="item wow fadeInUpBig animated animated" data-number="246"
               style="visibility: visible;">
               <div class="icon">
-                <div class="flaticon-target display-2 text-white"></div>
+                <div class="icon-graduation-cap display-2 text-white"></div>
               </div>
               <p id="number4" class="number">246</p>
               <span></span>
@@ -246,81 +213,24 @@
       </div>
     </section>
 
-
-    <!-- <section class="site-section bg-light" id="training-section">
+    <section class="site-section bg-light" id="batch-section">
       <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <h2 class="text-black">Batches</h2>
-            <p>We have different batches for different cources. Choose your course & check their content.</p>
-          </div>
-        </div>
-
-        <div class="nonloop-block-13 owl-style owl-carousel">
-          <div class="training">
-            <figure class="mb-4"><img src="images/cprog.jpg" alt="Image" class="img-fluid"></figure>
-            <h3 class="text-black mb-3">Life Coach Training</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est maxime adipisci incidunt voluptatum
-              pariatur. Officia eaque ipsum ducimus.</p>
-          </div>
-
-          <div class="training">
-            <figure class="mb-4"><img src="images/advc.png" alt="Image" class="img-fluid"></figure>
-            <h3 class="text-black mb-3">Release Your Potential</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est maxime adipisci incidunt voluptatum
-              pariatur. Officia eaque ipsum ducimus.</p>
-          </div>
-
-          <div class="training">
-            <figure class="mb-4"><img src="images/cpp.png" alt="Image" class="img-fluid"></figure>
-            <h3 class="text-black mb-3">Transforming Lives</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est maxime adipisci incidunt voluptatum
-              pariatur. Officia eaque ipsum ducimus.</p>
-          </div>
-
-          <div class="training">
-            <figure class="mb-4"><img src="images/cppadv.jpg" alt="Image" class="img-fluid"></figure>
-            <h3 class="text-black mb-3">Life Coach Training</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est maxime adipisci incidunt voluptatum
-              pariatur. Officia eaque ipsum ducimus.</p>
-          </div>
-
-          <div class="training">
-            <figure class="mb-4"><img src="images/datastructure.jpg" alt="Image" class="img-fluid"></figure>
-            <h3 class="text-black mb-3">Release Your Potential</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est maxime adipisci incidunt voluptatum
-              pariatur. Officia eaque ipsum ducimus.</p>
-          </div>
-
-          <div class="training">
-            <figure class="mb-4"><img src="images/programming.jpg" alt="Image" class="img-fluid"></figure>
-            <h3 class="text-black mb-3">Transforming Lives</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est maxime adipisci incidunt voluptatum
-              pariatur. Officia eaque ipsum ducimus.</p>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-
-    <section class="site-section" id="batch-section" data-aos="fade">
-      <div class="container">
-        <div class="row justify-content-center" data-aos="fade-up">
+        <div class="row justify-content-center">
           <div class="col-lg-6 text-center mb-5">
-
             <h2 class="text-black mb-2">Batch</h2>
             <p>We have best batch with multiple courses in single batch with having C, CPP, Data Structure & etc
               programming.</p>
           </div>
         </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="">
+        <div class="row">
+          <div class="col-md-6 mb-4">
             <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <img src="images/comp-fundamental.png" alt="Image" class="img-fluid rounded">
+              <figure class="mr-4 text-center">
+                <img src="images/comp-fundamental.png" alt="Image" class="img-fluid rounded" width="150" height="150"
+                  loading="lazy">
               </figure>
               <div class="blog-entry-text">
-                <h3><a href="javascript:void(0);">Computer Fundamentals</a></h3>
+                <h3>Computer Fundamentals</h3>
                 <p>Master essential computer fundamentals to build a solid understanding of basic operations and
                   functionality.</p>
                 <button type="button" class="btn btn-primary" id="computerFundamentalContent">
@@ -329,29 +239,31 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 mb-4">
             <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <img src="images/cprog.jpg" alt="Image" class="img-fluid rounded">
+              <figure class="mr-4 text-center">
+                <img src="images/cprog.jpg" alt="Image" class="img-fluid rounded" width="150" height="150"
+                  loading="lazy">
               </figure>
               <div class="blog-entry-text">
-                <h3><a href="javascript:void(0);">C Programming</a></h3>
+                <h3>C Programming</h3>
                 <p>Develop proficiency in procedural programming techniques to create efficient and structured solutions
                   for computational
                   problems.</p>
-                <button type="button" class="btn btn-primary" id="cContent">
+                <button type="button" class="btn btn-primary" id="cContent" width="150" height="150">
                   Contents &gt;
                 </button>
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="">
+          <div class="col-md-6 mb-4">
             <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <img src="images/advc.png" alt="Image" class="img-fluid rounded">
+              <figure class="mr-4 text-center">
+                <img src="images/advc.png" alt="Image" class="img-fluid rounded" width="150" height="150"
+                  loading="lazy">
               </figure>
               <div class="blog-entry-text">
-                <h3><a href="javascript:void(0);">C Advance Programming</a></h3>
+                <h3>C Advance Programming</h3>
                 <p>Master advanced C language concepts to architect complex and optimized solutions for real-world
                   software applications.</p>
                 <button type="button" class="btn btn-primary" id="advCContent">
@@ -360,13 +272,13 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 mb-4">
             <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <img src="images/cpp.png" alt="Image" class="img-fluid rounded">
+              <figure class="mr-4 text-center">
+                <img src="images/cpp.png" alt="Image" class="img-fluid rounded" width="150" height="150" loading="lazy">
               </figure>
               <div class="blog-entry-text">
-                <h3><a href="javascript:void(0);">C++ Programming</a></h3>
+                <h3>C++ Programming</h3>
                 <p>Master foundational principles of object-oriented programming to design and implement scalable and
                   maintainable software
                   solutions.</p>
@@ -376,13 +288,14 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 mb-4">
             <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <img src="images/cppadv.jpg" alt="Image" class="img-fluid rounded">
+              <figure class="mr-4 text-center">
+                <img src="images/cppadv.jpg" alt="Image" class="img-fluid rounded" width="150" height="150"
+                  loading="lazy">
               </figure>
               <div class="blog-entry-text">
-                <h3><a href="javascript:void(0);">C++ Advance Programming</a></h3>
+                <h3>C++ Advance Programming</h3>
                 <p>Master advanced C++ features and techniques to architect complex, high-performance software systems
                   efficiently.</p>
                 <button type="button" class="btn btn-primary" id="advCppprogramming">
@@ -391,13 +304,14 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 mb-4">
             <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <img src="images/datastructure.jpg" alt="Image" class="img-fluid rounded">
+              <figure class="mr-4 text-center">
+                <img src="images/datastructure.jpg" alt="Image" class="img-fluid rounded" width="150" height="150"
+                  loading="lazy">
               </figure>
               <div class="blog-entry-text">
-                <h3><a href="javascript:void(0);">Data Structure</a></h3>
+                <h3>Data Structure</h3>
                 <p>Master advanced data structures and algorithms to solve complex problems effectively in various
                   programming contexts.</p>
                 <button type="button" class="btn btn-primary" id="dataStructureContent">
@@ -406,13 +320,14 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 mb-4">
             <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <img src="images/programming.jpg" alt="Image" class="img-fluid rounded">
+              <figure class="mr-4 text-center">
+                <img src="images/programming.jpg" alt="Image" class="img-fluid rounded" width="150" height="150"
+                  loading="lazy">
               </figure>
               <div class="blog-entry-text">
-                <h3><a href="javascript:void(0);">Programming</a></h3>
+                <h3>Programming</h3>
                 <p>Master advanced programming techniques in C to effectively solve a variety of programming challenges
                   and tasks.</p>
                 <button type="button" class="btn btn-primary" id="programmingContent">
@@ -425,240 +340,9 @@
       </div>
     </section>
 
-    <!-- <section>
+    <section class="site-section" id="testimonials-section">
       <div class="container">
-        <div class="row justify-content-center" data-aos="fade-up">
-          <div class="col-lg-6 text-center mb-5">
-            <h2 class="text-black mb-2">Course Topics</h2>
-          </div>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="200">
-          <div class="accordion" id="accordionExample">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Computer Fundamentals
-                  </button>
-                </h2>
-              </div>
-
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul>
-                    <li>Introduction</li>
-                    <li>X86 Tool Chains and its Components</li>
-                    <li>Working of preprocessor</li>
-                    <li>Working of compiler</li>
-                    <li>Phases of compiler</li>
-                    <li>Working of assembler</li>
-                    <li>Working of linker</li>
-                    <li>Working of loader</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    C programming language
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul>
-                    <li>History of C language</li>
-                    <li>Storage classes</li>
-                    <li>Auto storage class</li>
-                    <li>Register storage class</li>
-                    <li>Static storage class</li>
-                    <li>Extern storage class</li>
-                    <li>Scope of variable</li>
-                    <li>Lifetime of variable</li>
-                    <li>Linkage and its types</li>
-                    <li>Data Types</li>
-                    <li>Array in C</li>
-                    <li>Types of array</li>
-                    <li>Memory representation of array</li>
-                    <li>Character array and string</li>
-                    <li>Dynamic memory allocation techniques</li>
-                    <li>Internal flow of dynamic memory allocations</li>
-                    <li>Dynamic memory allocation functions</li>
-                    <li>Library functions applicable on memory</li>
-                    <li>Dynamic memory allocations on array (1D, 2D, 3D)</li>
-                    <li>Structure and Union</li>
-                    <li>Memory layout of Structure and Union</li>
-                    <li>Enumeration</li>
-                    <li>Use of Enumeration constant</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Advanced C programming
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul>
-                    <li>Pointer</li>
-                    <li>Memory layout of pointers</li>
-                    <li>Types of pointer</li>
-                    <li>Pointer arithmetic</li>
-                    <li>Operations on void pointer</li>
-                    <li>Null pointer and Dangling pointer</li>
-                    <li>Function pointers</li>
-                    <li>Pointer to array and array to pointer</li>
-                    <li>C Preprocessor</li>
-                    <li>Macro expansion</li>
-                    <li>Types of macros</li>
-                    <li>Header files contents and its inclusion</li>
-                    <li>Conditional compilation techniques</li>
-                    <li>Tokenization process</li>
-                    <li>Writing user defined functions</li>
-                    <li>Working of user stack</li>
-                    <li>Contents of stack frame</li>
-                    <li>Function calling techniques</li>
-                    <li>Call by value technique</li>
-                    <li>Call by address technique</li>
-                    <li>Function returning mechanism</li>
-                    <li>Return by value technique</li>
-                    <li>Return by address technique</li>
-                    <li>Padding and memory alignment</li>
-                    <li>Contents inside structure and union</li>
-                    <li>Pragma directives</li>
-                    <li>Bit-field use in structure</li>
-                    <li>Exception handling in C</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingFour">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Advanced C++ programming
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul>
-                    <li>Inline function</li>
-                    <li>This pointer</li>
-                    <li>Member initialization list</li>
-                    <li>Up casting</li>
-                    <li>Down casting</li>
-                    <li>Pure Virtual function</li>
-                    <li>Virtual destructor</li>
-                    <li>Pure Virtual destructor</li>
-                    <li>Shallow copy</li>
-                    <li>Deep copy</li>
-                    <li>New handler</li>
-                    <li>Run Time Type Identification (RTTI)</li>
-                    <li>Generic programming</li>
-                    <li>Function template</li>
-                    <li>Singleton class</li>
-                    <li>Class template</li>
-                    <li>Standard Template Library (STL)</li>
-                    <li>Array</li>
-                    <li>Vector</li>
-                    <li>Set, Multiset</li>
-                    <li>Map, Multi-map</li>
-                    <li>Type cast</li>
-                    <li>Static cast</li>
-                    <li>Const cast</li>
-                    <li>Dynamic cast</li>
-                    <li>Reinterpret cast</li>
-                    <li>Smart Pointers</li>
-                    <li>Auto pointer</li>
-                    <li>Unique pointer</li>
-                    <li>Shared pointer</li>
-                    <li>Weak pointer</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingFive">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Data Structure
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul>
-                    <li>Linked List</li>
-                    <li>Singly Linked List</li>
-                    <li>Doubly Linked List</li>
-                    <li>Singly Circular Linked List</li>
-                    <li>Doubly Circular Linked List</li>
-                    <li>Stack</li>
-                    <li>Stack using static memory allocation</li>
-                    <li>Stack using dynamic memory allocation</li>
-                    <li>Queue</li>
-                    <li>Linear queue</li>
-                    <li>Circular Queue</li>
-                    <li>Doubly Ended Queue</li>
-                    <li>Priority Queue</li>
-                    <li>Tree</li>
-                    <li>Binary Search Tree</li>
-                    <li>Pre-order</li>
-                    <li>In-order</li>
-                    <li>Post-order</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingSix">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Programming
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul>
-                    <li>Programs on Number</li>
-                    <li>Programs on Array using static memory allocation</li>
-                    <li>Programs on Passing Array to Function</li>
-                    <li>Programs on Array using dynamic memory allocation</li>
-                    <li>Programs on Digit</li>
-                    <li>Programs on Bit</li>
-                    <li>Programs on String</li>
-                    <li>Programs on Recursion</li>
-                    <li>Programs on Structure</li>
-                    <li>Programs on Union</li>
-                    <li>Programs on Linked List</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-
-    <section class="site-section" id="testimonials-section" data-aos="fade">
-      <div class="container">
-        <div class="row justify-content-center" data-aos="fade-up">
+        <div class="row justify-content-center">
           <div class="col-lg-6 text-center mb-5">
             <h2 class="text-black mb-2">Happy Students Feedbacks</h2>
           </div>
@@ -672,23 +356,12 @@
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-delay="200">
+        <div>
           <div id="review-owl-data" class="owl-carousel owl-style owl-carousel-one no-owl-nav">
-            <!-- <div>
-              <div class="block-testimony-1 text-center">
-
-                <blockquote class="mb-4">
-                  <p>&ldquo;The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild
-                    Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven
-                    versalia, put her initial into the belt and made herself on the way.&rdquo;</p>
-                </blockquote>
-                <h3 class="font-size-20 text-black">Ricky Fisher</h3>
-              </div>
-            </div> -->
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-delay="400" class="text-center"
-          style="justify-content: center; align-items: center; display: flex;" id="openSubmitReviewBtnContainer">
+        <div class="text-center" style="justify-content: center; align-items: center; display: flex;"
+          id="openSubmitReviewBtnContainer">
           <a type="button" class="btn btn-primary text-white" id="openSubmitReviewBtn">
             Submit Your Feedback
           </a>
@@ -696,8 +369,7 @@
             All Feedbacks
           </a>
         </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="400" id="openReviewSubmit"
-          style="margin-top: 20px; display: none;">
+        <div class="row" id="openReviewSubmit" style="margin-top: 20px; display: none;">
           <div class="col-lg-12 mb-5">
             <form id="reviewForm">
               <h5 style="font-weight: 600; color: black;">Submit your feedback</h5>
@@ -734,11 +406,11 @@
               <div class="form-group row">
                 <div class="col-md-12">
                   <p style="margin: 0;">Rating</p>
-                  <span class="ratingstar fa fa-star"></span>
-                  <span class="ratingstar fa fa-star"></span>
-                  <span class="ratingstar fa fa-star"></span>
-                  <span class="ratingstar fa fa-star"></span>
-                  <span class="ratingstar fa fa-star"></span>
+                  <span class="ratingstar icon-star"></span>
+                  <span class="ratingstar icon-star"></span>
+                  <span class="ratingstar icon-star"></span>
+                  <span class="ratingstar icon-star"></span>
+                  <span class="ratingstar icon-star"></span>
                   <input type="hidden" id="rating">
                   <div style="text-align: left;" id="rating-errors"></div>
                 </div>
@@ -761,22 +433,22 @@
       </div>
     </section>
 
-    <div class="site-section bg-light" id="contact-section" data-aos="fade">
+    <div class="site-section bg-light" id="contact-section">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center mb-5">
             <h2 class="text-black">Contact Me</h2>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-delay="200">
+        <div>
           <div id="googleMap" style="width:100%;height:500px;">
-            <iframe
+            <iframe title="Google Map Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d662.5861939374029!2d74.48526164259165!3d20.04401112145389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a4c4021927cab23%3A0xe7d6a498e386a817!2s2ab%20Technology!5e0!3m2!1sen!2sin!4v1721658431061!5m2!1sen!2sin"
               width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-        <div class="row mb-5" data-aos="fade-up" data-aos-delay="400">
+        <div class="row mb-5">
           <div class="mb-4 mb-lg-0 col-md-6 col-lg-4">
             <p class="mb-0 font-weight-bold text-primary">Address</p>
             <p class="mb-4">2ab Technologies, 1st Floor of Pardeshi Complex, Shani Patangan, Near Bus Stand, Yeola,
@@ -791,7 +463,7 @@
             <p class="mb-0"><a href="#">support@2abtechnology.in</a></p>
           </div>
         </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="600">
+        <div class="row">
           <div class="col-lg-12 mb-5">
             <form id="contactForm">
               <div class="form-group row">
@@ -838,7 +510,7 @@
 
 
 
-    <footer class="site-footer bg-primary" data-aos="fade">
+    <footer class="site-footer bg-primary">
 
     </footer>
 
@@ -847,13 +519,13 @@
 
   <!-- Modal -->
   <div class="modal fade drawer right-align" id="bootstrapModalRight" tabindex="-1" role="dialog"
-    aria-labelledby="bootstrapModalLabel" aria-hidden="true">
+    aria-labelledby="bootstrapModalLabel" aria-hidden aria-label="Information about course topic">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="bootstrapModalLabel"></h5>
+          <h3 class="modal-title" id="bootstrapModalLabel"></h3>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+            <span aria-hidden>&times;</span>
           </button>
         </div>
         <div class="modal-body" id="bootstrapModalBody">
@@ -862,66 +534,78 @@
     </div>
   </div>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-
-  <script src="js/typed.js"></script>
-  <script>
-    var typed = new Typed('.typed-words', {
-      strings: [" Software Developer", " Coach"],
-      typeSpeed: 80,
-      backSpeed: 80,
-      backDelay: 4000,
-      startDelay: 1000,
-      loop: true,
-      showCursor: true
-    });
-  </script>
-
-  <script src="js/main.js"></script>
-  <script src="js/modal.js"></script>
-  <script type="module" src="js/contact.js"></script>
-  <script type="module" src="js/review.js"></script>
-  <script type="module" src="js/admin-stats.js"></script>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
-
-  <script>
-    function myMap() {
-      var mapProp = {
-        center: new google.maps.LatLng(51.508742, -0.120850),
-        zoom: 5,
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+  <script src="js/common_merge.min.js" defer></script>
+  <script src="js/owl.carousel.min.js" defer></script>
+  <script defer>
+    function loadScript(src, isModule, isHead, callback) {
+      const script = document.createElement('script');
+      script.src = src;
+      script.async = true;
+      script.defer = true;
+      if (isModule) script.type = 'module';
+      if (callback) script.onload = () => callback();
+      script.onerror = () => console.error(`Failed to load script ${src}`);
+      document.body.appendChild(script);
     }
-  </script>
 
-  <script>
-    jQuery(document).ready(function ($) {
-      getStats(true);
-      getBestReviews();
-      $("#openSubmitReviewBtn").on("click", () => {
-        $("#openSubmitReviewBtnContainer").hide();
-        $("#openReviewSubmit").show();
+    document.addEventListener("DOMContentLoaded", function () {
+      loadScript('js/typed.js', false, false, () => {
+        setTimeout(() => {
+          new Typed('.typed-words', {
+            strings: [" Software Developer", " Coach"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            backDelay: 4000,
+            startDelay: 1000,
+            loop: true,
+            showCursor: true
+          });
+        }, 1000);
       });
 
-      $('.ratingstar').click(function () {
-        $('.ratingstar').removeClass('checked');
-        $(this).prevAll().addBack().addClass('checked');
-        var checkedCount = $('.ratingstar.checked').length;
-        $('#rating').val(checkedCount);
+      const lazyLoadScripts = [
+        'js/jquery.sticky.js',
+        'js/modal.js',
+        'js/main.js',
+      ];
+
+      lazyLoadScripts.forEach(src => {
+        loadScript(src);
       });
-    })
+
+      loadScript('js/contact.js', true, false);
+
+      loadScript('js/review.js', true, false, () => {
+        getBestReviews();
+        $("#openSubmitReviewBtn").on("click", () => {
+          $("#openSubmitReviewBtnContainer").hide();
+          $("#openReviewSubmit").show();
+        });
+        $('.ratingstar').click(function () {
+          $('.ratingstar').removeClass('checked');
+          $(this).prevAll().addBack().addClass('checked');
+          var checkedCount = $('.ratingstar.checked').length;
+          $('#rating').val(checkedCount);
+        });
+      });
+
+      loadScript('js/admin-stats.js', true, false, () => {
+        getStats(true);
+      });
+
+      loadScript('https://www.googletagmanager.com/gtag/js?id=G-TNY4EJ8HVH', false, true, () => {
+        setTimeout(() => {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', 'G-TNY4EJ8HVH');
+        }, 2000);
+      });
+    });
+
 
   </script>
+
 
 </body>
 

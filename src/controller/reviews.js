@@ -18,13 +18,16 @@ exports.saveReview = catchAsync(async (req, res) => {
   await SaveReview(req.connection, req.body);
 
   await SendEmail({
-    to: process.env.SELF_EMAIL,
-    subject: "Feedback Form",
+    from: process.env.EMAIL_FEEDBACK_FROM,
+    to: process.env.INFO_EMAIL,
+    cc: process.env.SELF_EMAIL,
+    subject: `New feedback from ${req.body.name}`,
     template: 'feedback-form',
     context: req.body
   });
 
   await SendEmail({
+    from: process.env.EMAIL_FROM,
     to: req.body.email,
     subject: "Thank You For Your Feedback",
     template: 'feedback-thanks',

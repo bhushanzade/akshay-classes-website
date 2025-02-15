@@ -41,57 +41,30 @@
   <meta name="twitter:author" content="2ab Technology">
   <!-- end Twitter tags -->
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNY4EJ8HVH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  <link id="CANONICALLINK" rel="canonical" href="https://2abtechnology.in/onlinecompiler.html">
 
-    gtag('config', 'G-TNY4EJ8HVH');
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet" media="print"
+    onload="this.media='all'">
+  <link rel="stylesheet" href="fonts/icomoon/style.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script class="structured-data" type="application/ld+json">
+        {"@context":"http://schema.org","@type":"WebSite","url":"https://2abtechnology.in","name":"2ab Technology"}
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
-  <link rel="stylesheet" href="css/aos.css">
-
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <style>
-    /* .site-navbar {
-      background: #373a6d;
-      border-bottom: 1px solid transparent;
-    }
-
-    .sticky-wrapper {
-      position: relative !important;
-    } */
-
     .site-section-codeboard {
       background: rgb(57, 57, 57);
     }
 
     .site-blocks-cover,
     .site-blocks-cover>.container>.row {
-      height: calc(10vh);
-      min-height: 30px;
+      height: 100%;
+      min-height: 75px;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
       .site-section-codeboard {
         padding: 0px;
       }
@@ -101,9 +74,14 @@
         height: 68px;
       }
     }
+
+    #onlinecompilerpcp {
+      height: 80dvh;
+    }
   </style>
 
 </head>
+
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
   <div id="toast-container" class="toastr-container">
@@ -111,7 +89,6 @@
   </div>
 
   <div class="site-wrap">
-
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -123,13 +100,33 @@
 
 
     <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div>
+          <img src="./images/logo_nav.png" alt="" width="250" height="42" loading="lazy">
+        </div>
+        <nav class="site-navigation position-relative text-right d-none d-xl-block" role="navigation">
+          <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+            <li><a href="#home-section" class="nav-link">Home</a></li>
+            <li><a href="#about-section" class="nav-link">About</a></li>
+            <li><a href="#batch-section" class="nav-link">Batch</a></li>
+            <li><a href="/onlinecompiler.html" class="nav-link">Compiler</a></li>
+            <li><a href="#testimonials-section" class="nav-link">Testimonial</a></li>
+            <li><a href="/feedback.html" class="nav-link">Feedbacks</a></li>
+            <li><a href="#contact-section" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="site-menu-toggle js-menu-toggle d-xl-none ml-md-0 py-3 w-100 text-right" title="Toggle Menu">
+          <span class="icon-menu h3"></span>
+        </a>
+      </div>
     </header>
 
-    <div class="site-blocks-cover" data-aos="fade">
+    <div class="site-blocks-cover">
     </div>
 
     <section class="site-section-codeboard">
-      <iframe id="onlinecompilerpcp" class="embed-responsive embed-responsive-16by9 gh-fit gh-fullwidth"
+      <iframe title="Online compiler provided by PCP" id="onlinecompilerpcp"
+        class="embed-responsive embed-responsive-16by9 gh-fit gh-fullwidth"
         src="https://procodeprogramming.com/onlinecompiler/fullscreen" frameborder="0" width="100%" allowfullscreen
         onload="onloadIframe(this)"></iframe>
     </section>
@@ -139,37 +136,39 @@
 
   </div> <!-- .site-wrap -->
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-  <script type="text/JavaScript" src="https://MomentJS.com/downloads/moment.js"></script>
+  <script src="js/common_merge.min.js" defer></script>
+  <script defer>
+    function loadScript(src, isModule, isHead, callback) {
+      const script = document.createElement('script');
+      script.src = src;
+      script.async = true;
+      script.defer = true;
+      if (isModule) script.type = 'module';
+      if (callback) script.onload = () => callback();
+      script.onerror = () => console.error(`Failed to load script ${src}`);
+      document.body.appendChild(script);
+    }
 
+    document.addEventListener("DOMContentLoaded", function () {
 
-  <script src="js/main.js"></script>
-  <script type="module" src="js/review.js"></script>
+      const lazyLoadScripts = [
+        'js/jquery.sticky.js',
+        'js/main.js',
+      ];
 
-  <script>
-    jQuery(document).ready(function ($) {
-      getReviews();
-      $('.ratingstar').click(function () {
-        $('.ratingstar').removeClass('checked');
-        $(this).prevAll().addBack().addClass('checked');
-        var checkedCount = $('.ratingstar.checked').length;
-        $('#rating').val(checkedCount);
+      lazyLoadScripts.forEach(src => {
+        loadScript(src);
       });
 
-      function fit() {
-        var iframes = document.querySelectorAll("iframe.gh-fit")
-      }
-    })
+      loadScript('https://www.googletagmanager.com/gtag/js?id=G-TNY4EJ8HVH', false, true, () => {
+        setTimeout(() => {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', 'G-TNY4EJ8HVH');
+        }, 2000);
+      });
+    });
 
     function onloadIframe(event) {
       if (window.matchMedia("(max-width: 767px)").matches) {
@@ -190,7 +189,11 @@
       }
     }
 
+    function fit() {
+      var iframes = document.querySelectorAll("iframe.gh-fit")
+    }
   </script>
+
 
 </body>
 

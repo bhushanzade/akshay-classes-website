@@ -124,14 +124,12 @@ async function getBestReviews() {
         $("#review-owl-data").empty();
         let newItems = '';
         data.map(x => {
-          const newReview = $(`<div>
-              <div class="block-testimony-1 text-center">
+          const newReview = $(`<div class="block-testimony-1 text-center">
                 <blockquote class="mb-4">
-                  <p>&ldquo;${x.message}&rdquo;</p>
+                  &ldquo;${x.message}&rdquo;
                 </blockquote>
                 <h3 class="font-size-20 text-black">${x.name}</h3>
               </div>
-            </div>
             `);
           $("#review-owl-data").append(newReview);
         })
@@ -200,11 +198,11 @@ async function getReviews() {
                 </div>
                 <p style="font-size: 14px;">&ldquo;${x.message}&rdquo;</p>
                 <div>
-                  <span class="ratingstar fa fa-star ${1 <= x.rating ? ' checked' : ''}"></span>
-                  <span class="ratingstar fa fa-star ${2 <= x.rating ? ' checked' : ''}"></span>
-                  <span class="ratingstar fa fa-star ${3 <= x.rating ? ' checked' : ''}"></span>
-                  <span class="ratingstar fa fa-star ${4 <= x.rating ? ' checked' : ''}"></span>
-                  <span class="ratingstar fa fa-star ${5 <= x.rating ? ' checked' : ''}"></span>
+                  <span class="ratingstar icon-star-o ${1 <= x.rating ? ' checked' : ''}"></span>
+                  <span class="ratingstar icon-star-o ${2 <= x.rating ? ' checked' : ''}"></span>
+                  <span class="ratingstar icon-star-o ${3 <= x.rating ? ' checked' : ''}"></span>
+                  <span class="ratingstar icon-star-o ${4 <= x.rating ? ' checked' : ''}"></span>
+                  <span class="ratingstar icon-star-o ${5 <= x.rating ? ' checked' : ''}"></span>
                 </div>
                 ${isLoggedin ? `
                     <div class="mt-2"><button id="reviewBtn${x.id}" onclick="changeReviewStatus(${x.id})" style="font-size: 12px; font-weight: 600; color: white; padding: 5px 15px;" class="btn ${x.is_active ? 'btn-danger' : 'btn-success'}">${x.is_active ? 'Deactivate' : 'Activate'}</button></div>

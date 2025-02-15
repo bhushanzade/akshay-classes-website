@@ -10,6 +10,7 @@ const validationRules = [
     name: "name",
     rules: {
       required: { message: "Name is required" },
+      minLength: { value: 3, message: "Name must be at least 3 characters long" }
     }
   },
   {
@@ -33,6 +34,7 @@ const validationRules = [
     name: "message",
     rules: {
       required: { message: "Message is required" },
+      minLength: { value: 10, message: "Message must be at least 10 characters long" }
     }
   },
 ];
@@ -86,9 +88,9 @@ export async function createContactMessage(event) {
 
 async function contactMessages() {
   // const url = new URL(config.v1.apiUrl + "/contacts");
-  const url = "/contacts";
+  let url = "/contacts";
   const isLoggedin = !!localStorage.getItem("classIsLoggedIn");
-  if (isLoggedin) url += "?isLogin" + isLoggedin;
+  if (isLoggedin) url += "?isLogin=" + isLoggedin;
   try {
     const res = await fetch(url, {
       method: "GET",
@@ -108,7 +110,7 @@ async function contactMessages() {
       }
       showErrorToast(data.message);
       if (res.status == 404) {
-        window.location.href = "/";
+        // window.location.href = "/";
       }
     } else {
       if (data && Array.isArray(data) && data.length > 0) {

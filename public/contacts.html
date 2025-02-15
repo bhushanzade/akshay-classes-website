@@ -15,25 +15,11 @@
   <meta name="robots" content="noindex,nofollow">
   <meta name="author" content="2ab Technology">
 
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet" media="print"
+    onload="this.media='all'">
+  <link rel="stylesheet" href="fonts/icomoon/style.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
-  <link rel="stylesheet" href="css/aos.css">
-
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -43,7 +29,6 @@
   </div>
 
   <div class="site-wrap">
-
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -53,12 +38,30 @@
       <div class="site-mobile-menu-body"></div>
     </div>
 
-
     <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div>
+          <img src="./images/logo_nav.png" alt="" width="250" height="42" loading="lazy">
+        </div>
+        <nav class="site-navigation position-relative text-right d-none d-xl-block" role="navigation">
+          <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+            <li><a href="#home-section" class="nav-link">Home</a></li>
+            <li><a href="#about-section" class="nav-link">About</a></li>
+            <li><a href="#batch-section" class="nav-link">Batch</a></li>
+            <li><a href="/onlinecompiler.html" class="nav-link">Compiler</a></li>
+            <li><a href="#testimonials-section" class="nav-link">Testimonial</a></li>
+            <li><a href="/feedback.html" class="nav-link">Feedbacks</a></li>
+            <li><a href="#contact-section" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="site-menu-toggle js-menu-toggle d-xl-none ml-md-0 py-3 w-100 text-right" title="Toggle Menu">
+          <span class="icon-menu h3"></span>
+        </a>
+      </div>
     </header>
 
 
-    <div class="site-blocks-cover" data-aos="fade">
+    <div class="site-blocks-cover">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-12 mt-lg-5 text-center">
@@ -85,29 +88,35 @@
     <footer class="site-footer bg-primary">
     </footer>
 
-  </div> <!-- .site-wrap -->
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-  <script type="text/JavaScript" src="https://MomentJS.com/downloads/moment.js"></script>
-
-
-  <script src="js/main.js"></script>
-  <script type="module" src="js/contact.js"></script>
-
+  </div>
+  <script src="js/common_merge.min.js"></script>
   <script>
-    jQuery(document).ready(function ($) {
-      contactMessages();
-    })
+    function loadScript(src, isModule, callback) {
+      const script = document.createElement('script');
+      script.src = src;
+      script.async = true;
+      script.defer = true;
+      if (isModule) script.type = 'module';
+      if (callback) script.onload = () => callback();
+      script.onerror = () => console.error(`Failed to load script ${src}`);
+      document.body.appendChild(script);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const lazyLoadScripts = [
+        'js/jquery.sticky.js',
+        'js/main.js',
+        "https://MomentJS.com/downloads/moment.js"
+      ];
+
+      lazyLoadScripts.forEach(src => {
+        loadScript(src);
+      });
+      loadScript('js/contact.js', true, () => {
+        contactMessages();
+      });
+    });
+
   </script>
 
 </body>
